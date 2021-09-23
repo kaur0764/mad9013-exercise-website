@@ -1,0 +1,70 @@
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+}
+
+.banner{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: light;
+    color:#f3f6f5;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.hero{
+    background-image:linear-gradient(to bottom,#0007,#0007),url("../banners/hero-home.jpg");
+    padding: 9rem 2rem;
+}
+
+.action{
+    background-image:linear-gradient(to bottom,#0009,#0009),url("../banners/soccer-banner-bw.jpg");
+    padding: 6.5rem 2rem;
+}
+
+.banner h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size:2rem;
+    margin:1rem 0;
+}
+.banner p{
+    font-size:1.3rem;
+    margin:1rem 0;
+}
+
+.button{
+    text-decoration: none;
+    padding:1rem 3rem;
+    border-radius: 2.5rem;
+    display:inline-block;
+    font-size:1.6rem;
+}
+
+.hero .button{
+    color: #09a38c;
+    border: 0.15rem solid  #09a38c;
+}
+
+.action .button{
+    color: #f3f6f5;
+    border: 0.15rem solid #f3f6f5;;
+}
+.button:hover{
+    background-color: #09a38c;
+    color:#f3f6f5;
+}
+    
+.button:active{
+    background-color: #045d4f;
+    border-color:  #f3f6f5;
+}
