@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polished+</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hierarchy.css"
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">  
@@ -14,12 +15,12 @@
 
 <body>
     <header>
-        <h1>
+        <h1 class="logo">
             <a href="./">
                 <img src="logos/logo-polished-color.svg" alt="Polished">
             </a>
         </h1>
-
+        
         <nav>
             <ul>
                 <li><a href="#">Platform Tour</a></li>
@@ -31,11 +32,12 @@
     </header>
 
     <main>
-
         <header class="banner hero"> <!-- Hero banner -->
-            <h2>Community feel. Professional look.</h2>
-            <p>Create your team’s new look with our simple, fast brand builder.</p>
-            <a class="button" href="#">Sign Up</a>
+            <div class= "container">
+                <h2>Community feel. Professional look.</h2>
+                <p>Create your team’s new look with our simple, fast brand builder.</p>
+                <a class="button" href="#">Sign Up</a>
+            </div>
         </header>
 
         <section> <!-- Logo bar -->
@@ -47,17 +49,22 @@
             </ul>
         </section>
 
-        <section> <!-- Product intro -->
-            <h2>Design your brand from top to bottom.</h2>
-            <p>With the Polished brand builder, you can create any asset your team could need. From logos, to jerseys, to merchandise, to advertisements. With simple templates, a variety of pre-designed elements, and an easy to use platform, professional level sports branding is at your fingertips!</p>
-            <img src="images/product/laptop-platform.png" alt="Laptop platform">
+        <section class="product"> <!-- Product intro -->
+            <div class="container">
+                <div class="container-text centered">
+                    <h2>Design your brand from top to bottom.</h2>
+                    <p>With the Polished brand builder, you can create any asset your team could need. From logos, to jerseys, to merchandise, to advertisements. With simple templates, a variety of pre-designed elements, and an easy to use platform, professional level sports branding is at your fingertips!</p>
+                </div>
+                <img src="images/product/laptop-platform.png" alt="Laptop platform">
+            </div>
         </section>
 
         <section  class="banner action"><!-- Call to Action Banner -->
             <h2>Join now and take your team to the next level.</h2>
             <a class="button" href="#">Sign Up</a>
         </section>
-
+            </div>
+        </div>
     </main> 
 
     <footer>
