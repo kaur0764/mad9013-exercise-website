@@ -1,7 +1,10 @@
 
 html{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
     box-sizing: border-box;
 }
+
 *, *::before, *::after{
     box-sizing: inherit;
 }
@@ -9,6 +12,173 @@ html{
 body{
     margin: 0px;
 }
+
+    /* masthead for reference style sheet */
+
+.mast{     
+    color: #f3f6f5;
+    background-color: #066051;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    margin-bottom:1.5rem;
+}
+
+.mast a{
+    color: #f3f6f5;
+    text-decoration: none;
+}
+
+    /* Type hierarchy */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6,
+p,
+ul,
+ol{
+    margin: 0 0 1.5rem;
+}
+
+h1 {
+    font-size: 1.802rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #066051;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.602rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.424rem;
+}
+
+h4 {
+    font-size: 1.266rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 1.125rem;
+    color: #066051;
+    border-bottom: 1px solid #ccc;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+small {
+    font-size: 0.889rem;
+}
+
+a{
+    color: #066051;
+}
+
+a:hover,
+a:focus{
+    color:  #09a38c;;
+}
+
+@media only screen and (min-width: 45em){
+
+    /*  Tablet */
+
+    h1{
+    font-size: 2.488rem;
+    }
+
+    h2{
+        font-size: 2.074rem;
+    }
+
+    h3{
+        font-size: 1.728rem;
+    }
+
+    h4{
+        font-size: 1.44rem;
+    }
+
+    h5{
+        font-size: 1.2rem;
+    }
+
+    small{
+        font-size: 0.833rem;}
+
+}
+
+@media only screen and (min-width: 60em){  
+
+    /* Desktop */
+
+    h1{
+        font-size: 3.052rem;
+    }
+
+    h2{
+        font-size: 2.441rem;
+    }
+
+    h3{
+        font-size: 1.953rem;
+    }
+
+    h4{
+        font-size: 1.563rem;
+    }
+
+    h5{
+        font-size: 1.25rem;
+    }
+
+    small{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+    /* Containers */
+
+.container{
+    width: 100%;
+    max-width: 45em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+}
+
+.container-masthead{
+    width: 100%;
+    max-width: 45rem;
+}
+
+.container-text{
+    width: 100%;
+    max-width: 40em;
+}
+
+.container-footer{
+    width: 100%;
+    max-width: 45rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+    /* Banners */
 
 .banner{
     font-family: 'Ubuntu', sans-serif;
@@ -21,12 +191,13 @@ body{
     
 }
 
-.hero{
+.banner-hero{
     background-image:linear-gradient(to bottom,#0007,#0007),url("../banners/hero-home.jpg");
     padding: 9rem 2rem;
+    clear: both;
 }
 
-.action{
+.banner-action{
     background-image:linear-gradient(to bottom,#0009,#0009),url("../banners/soccer-banner-bw.jpg");
     padding: 6.5rem 2rem;
 }
@@ -42,20 +213,22 @@ body{
     margin:1rem 0;
 }
 
+    /* Buttons */
+
 .button{
     text-decoration: none;
-    padding:1rem 3rem;
+    padding:0.5rem 3rem;
     border-radius: 2.5rem;
     display:inline-block;
     font-size:1.6rem;
 }
 
-.hero .button{
+.btn-green{
     color: #09a38c;
     border: 0.15rem solid  #09a38c;
 }
 
-.action .button{
+.btn-white{
     color: #f3f6f5;
     border: 0.15rem solid #f3f6f5;;
 }
@@ -73,11 +246,13 @@ img{
     max-width: 100%;
 }
 
-.centered{
+    /* Platform Preview */
+
+.product-platform{
     text-align: center;
 }
 
-.centered p{
+.product-platform p{
     font-size: 1.2rem;
 }
 
@@ -86,7 +261,156 @@ img{
     margin-bottom: 5.5rem;
 }
 
-.logo{
-text-align: left;
-padding-left: 1.5rem;
+    /* Masthead */
+.masthead img{
+    max-height: 2rem;
+    margin-top: 1rem;
+}
+
+.masthead .logo{
+    margin-bottom: 0rem;
+    margin-left: 1rem;
+}
+
+.ul-masthead li{
+    padding-bottom: 0.5rem;
+}
+
+li{
+    list-style:none;
+}
+
+.ul-masthead{
+    text-align: center;
+    padding: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.masthead a{
+    text-decoration: none;
+}
+
+
+li.button{
+    font-size: 1rem;
+    padding: 0.4rem 2rem;
+    border-color: #066051;
+    margin-top: 0rem;
+}
+
+@media only screen and (min-width:  45em){   
+    .float-left{
+    float:left;
+    padding: 1rem;
+    }
+
+.float-right{
+    float:right;
+    padding: 1rem ;
+    }
+
+    .ul-masthead li{
+        margin-top: 1rem;
+    }
+    
+    li.button{
+    margin-top: 1.5rem;
+    }
+    .container-masthead{
+        width: 100%;
+        max-width: 50rem;
+    }
+}
+
+@media only screen and (min-width: 60em){  
+    .ul-masthead li{
+        margin-top: 1.5rem;
+    }
+    
+    li.button{
+        margin-top: 2rem;
+    }
+
+    .container-masthead{
+        width: 100%;
+        max-width: 70rem;
+    }
+
+}
+
+    /*  Footer   */
+
+.footer-top{
+    background-color: #1D6051;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer .button{
+    font-size: 1rem;
+    padding: 0.4rem 2rem;
+}
+
+footer img{
+    max-height: 2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.footer-bottom{
+    background-color:#13453B;
+    color: #f3f6f5;
+    text-align: center;
+}
+
+.footer-bottom a{
+    color: #f3f6f5;
+}
+
+.ul-footer li{ 
+    display: inline;
+    padding-left: 1rem;
+}
+
+.ul-footer{
+    padding: 1rem;
+    margin-bottom: 0rem;
+}
+
+@media only screen and (min-width:  45em){  
+
+    .footer-top{
+        overflow: hidden;
+        padding: 0rem;
+        }
+    
+    .footer-top .logo{
+        display: inline;
+    }
+
+    .footer-top img{
+        min-height: 2rem;
+    }
+
+    .footer-top a:last-of-type{
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer-bottom{
+        overflow: hidden;
+    }
+
+    .container-footer{
+        width: 100%;
+        max-width: 50rem;
+    }
+}
+
+@media only screen and (min-width:  60em){  
+    .container-footer{
+        width: 100%;
+        max-width: 70rem;
+    }
 }
