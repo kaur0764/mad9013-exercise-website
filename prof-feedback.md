@@ -21,3 +21,15 @@ Total: 4.5/5
 
 - The CSS should all be done in the `css/main.css` file. That way the styles will apply to all of your pages
 - You have used `font-family: 'Ubuntu', sans-serif;` to apply the Ubuntu font, however you have not linked to Google Fonts nor created your own `@font-face` rule with the font files to display the font. Because of this, the Ubuntu font is not being rendered. Make sure to link it properly!
+
+## Week 5 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+Fantastic work!
+
+- Having different max-widths at each media query isn't necessary. just stick with the base `.container` in the header and footer
+- Apply the `.button` class to the `a` not the `li`. We want to apply the button styles to the element we interact with.
