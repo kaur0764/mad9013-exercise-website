@@ -13,7 +13,7 @@ body{
     margin: 0px;
 }
 
-    /* masthead for reference style sheet */
+/* ------ masthead for reference style sheet -------- */
 
 .mast{     
     color: #f3f6f5;
@@ -29,7 +29,7 @@ body{
     text-decoration: none;
 }
 
-    /* Type hierarchy */
+/* ----------------- Type hierarchy ----------------- */
 
 h1, 
 h2, 
@@ -93,7 +93,7 @@ a:focus{
 
 @media only screen and (min-width: 45em){
 
-    /*  Tablet */
+    /* ---------- Tablet ---------- */
 
     h1{
     font-size: 2.488rem;
@@ -122,7 +122,7 @@ a:focus{
 
 @media only screen and (min-width: 60em){  
 
-    /* Desktop */
+    /* ---------- Desktop ---------- */
 
     h1{
         font-size: 3.052rem;
@@ -151,19 +151,14 @@ a:focus{
 }
 
 
-    /* Containers */
+/* ----------------- Containers ----------------- */
 
 .container{
     width: 100%;
-    max-width: 45em;
+    max-width: 70em;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin: 0 auto;
-}
-
-.container-masthead{
-    width: 100%;
-    max-width: 45rem;
 }
 
 .container-text{
@@ -171,14 +166,11 @@ a:focus{
     max-width: 40em;
 }
 
-.container-footer{
-    width: 100%;
-    max-width: 45rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.container-flex{
+    width: 100vw;
 }
 
-    /* Banners */
+/* ----------------- Banners ----------------- */
 
 .banner{
     font-family: 'Ubuntu', sans-serif;
@@ -213,7 +205,7 @@ a:focus{
     margin:1rem 0;
 }
 
-    /* Buttons */
+/* ----------------- Buttons ----------------- */
 
 .button{
     text-decoration: none;
@@ -232,11 +224,12 @@ a:focus{
     color: #f3f6f5;
     border: 0.15rem solid #f3f6f5;;
 }
+
 .button:hover{
     background-color: #09a38c;
     color:#f3f6f5;
 }
-    
+
 .button:active{
     background-color: #045d4f;
     border-color:  #f3f6f5;
@@ -246,7 +239,7 @@ img{
     max-width: 100%;
 }
 
-    /* Platform Preview */
+/* ----------------- Platform Preview ----------------- */
 
 .product-platform{
     text-align: center;
@@ -254,6 +247,8 @@ img{
 
 .product-platform p{
     font-size: 1.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .product .container{
@@ -261,89 +256,61 @@ img{
     margin-bottom: 5.5rem;
 }
 
-    /* Masthead */
-.masthead img{
-    max-height: 2rem;
-    margin-top: 1rem;
+.product .container-text{
+    margin: 0 auto;
 }
 
-.masthead .logo{
-    margin-bottom: 0rem;
-    margin-left: 1rem;
+/* ----------------- Masthead ----------------- */
+
+.masthead{
+    padding-top: 1rem;
 }
 
-.ul-masthead li{
-    padding-bottom: 0.5rem;
+.masthead a{                          
+    text-decoration: none;
 }
 
 li{
     list-style:none;
-}
-
-.ul-masthead{
-    text-align: center;
-    padding: 0rem;
-    margin-bottom: 0.5rem;
-}
-
-.masthead a{
-    text-decoration: none;
+    padding-right: 1rem;
 }
 
 
-li.button{
+li a.button{
     font-size: 1rem;
     padding: 0.4rem 2rem;
     border-color: #066051;
-    margin-top: 0rem;
+    color: #066051;
+} 
+
+.masthead img{
+    height: 2rem;
+    max-width: 10rem;
 }
 
-@media only screen and (min-width:  45em){   
-    .float-left{
-    float:left;
-    padding: 1rem;
-    }
-
-.float-right{
-    float:right;
-    padding: 1rem ;
-    }
-
-    .ul-masthead li{
-        margin-top: 1rem;
-    }
-    
-    li.button{
-    margin-top: 1.5rem;
-    }
-    .container-masthead{
-        width: 100%;
-        max-width: 50rem;
-    }
+.ul-masthead{
+    display: inline;
+    padding: 0;
 }
 
-@media only screen and (min-width: 60em){  
-    .ul-masthead li{
-        margin-top: 1.5rem;
-    }
-    
-    li.button{
-        margin-top: 2rem;
-    }
-
-    .container-masthead{
-        width: 100%;
-        max-width: 70rem;
-    }
-
+ul{
+    text-align: center;
 }
 
-    /*  Footer   */
+ul li{
+    padding-bottom: 0.5rem;
+}
+
+header h1{
+    margin: 0rem;
+}
+
+/* ----------------- Footer ----------------- */
 
 .footer-top{
     background-color: #1D6051;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 footer .button{
@@ -352,7 +319,7 @@ footer .button{
 }
 
 footer img{
-    max-height: 2rem;
+    height: 2rem;
     display: block;
     margin: 0 auto;
     margin-bottom: 1.5rem;
@@ -362,6 +329,7 @@ footer img{
     background-color:#13453B;
     color: #f3f6f5;
     text-align: center;
+    padding-top: 1rem;
 }
 
 .footer-bottom a{
@@ -369,48 +337,132 @@ footer img{
 }
 
 .ul-footer li{ 
-    display: inline;
-    padding-left: 1rem;
+    display: inline-block;
+    padding-left : 1rem;
 }
 
 .ul-footer{
     padding: 1rem;
     margin-bottom: 0rem;
+    font-size: smaller;
 }
+
+/* ---------------- Media Query ----------------- */
 
 @media only screen and (min-width:  45em){  
-
-    .footer-top{
-        overflow: hidden;
-        padding: 0rem;
-        }
     
-    .footer-top .logo{
+    /* ---------- Masthead ---------- */
+    
+    
+    .masthead.container-flex{
+        display:flex;                                       
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5rem;
+        margin: 0 auto;
+        max-width: 70em;
+        gap: 2rem;
+    }
+    
+    .masthead-item-one{
+        flex:0 0 20%;
+    }
+    
+    .masthead-item-two{
+        flex:0 0 75%;
+        padding-top: 2rem;
+    }
+    
+    .ul-masthead{
+        display:flex;
+        justify-content:space-between ;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    /* ---------- Footer ---------- */
+    
+    .footer-top{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    
+    footer img{
+        margin:0;
         display: inline;
+        padding-right: 7rem;
     }
-
-    .footer-top img{
-        min-height: 2rem;
-    }
-
-    .footer-top a:last-of-type{
-        margin-top: 1rem;
-        margin-right: 1rem;
-    }
-
+    
     .footer-bottom{
-        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 0;
     }
-
-    .container-footer{
-        width: 100%;
-        max-width: 50rem;
-    }
-}
-
-@media only screen and (min-width:  60em){  
-    .container-footer{
-        width: 100%;
-        max-width: 70rem;
+    
+    .ul-footer{
+        padding: 0;
     }
 }
+
+/* -------------- Logo Bar -------------- */
+
+.logo-item img{
+        max-width:160px;
+    }
+
+.logo-bar{
+    padding: 0 0.15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    max-width: 90em;
+} 
+
+.logo-item.one{
+    flex:0 0;
+}
+
+.logo-item.two{
+    flex:0 0;
+}
+.logo-item.three{
+    flex:0 0;
+}
+.logo-item.four{ 
+    flex:0 0;
+}
+
+@media only screen and (max-width: 52em){
+    .logo-bar{
+        justify-content: center;
+        align-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        min-height: 11rem;
+        gap: 2rem;
+    } 
+    
+    .logo-item.one{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.two{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.three{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.four{
+        flex:0 0 40%;
+    }
+} 

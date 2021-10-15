@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <header class="masthead">
-        <div class= "container container-masthead">
-        <h1 class="logo float-left">
-                <a href="./">
-                    <img src="logos/logo-polished-color.svg" alt="Polished">
-                </a>
-        </h1>
-            <nav>
-                <ul class="ul-masthead">
-                <li class= "float-left"><a href="#">Platform Tour</a></li>
-                <li class= "float-left"><a href="#">Pricing</a></li>
-                <li class= "float-right"><a href="#">Sign In</a></li>
-                <li class= "float-right button btn-green"><a href="#">Sign Up </a></li>
+    <header class="masthead container-flex">
+            <h1 class="logo masthead-item-one">
+                    <a href="./">
+                        <img src="logos/logo-polished-color.svg" alt="Polished">
+                    </a>
+            </h1>
+            <nav class="ul-masthead masthead-item-two">
+                <ul class="ul-masthead one">
+                    <li><a href="#">Platform Tour</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="ul-masthead one">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a class="button btn-green" href="#">Sign Up </a></li>
                 </ul>
             </nav>
-        </div>
     </header>
 
     <main>
@@ -41,11 +41,11 @@
         </header>
 
         <section> <!-- Logo bar -->
-            <ul>
-                <li><img src="images/logos/logo-ns.svg" alt="north star's logo"/></li>
-                <li><img src="images/logos/logo-tt.svg" alt="TopTable's logo"/></li>
-                <li><img src="images/logos/logo-qc.svg" alt="QUIDDITCH CANADA's logo"/></li>
-                <li><img src="images/logos/logo-met.svg" alt="Metcalfe Jets' logo"/></li>
+            <ul class="logo-bar">
+                <li class="logo-item one"><img src="images/logos/logo-ns.svg" alt="north star's logo"/></li>
+                <li class="logo-item two"><img src="images/logos/logo-tt.svg" alt="TopTable's logo"/></li>
+                <li class="logo-item three"><img src="images/logos/logo-qc.svg" alt="QUIDDITCH CANADA's logo"/></li>
+                <li class="logo-item four"><img src="images/logos/logo-met.svg" alt="Metcalfe Jets' logo"/></li>
             </ul>
         </section>
 
@@ -68,22 +68,18 @@
     </main> 
 
     <footer>
-        <div class="footer-top">
-                <div class="container container-footer">
-                <a class= "logo float-left" href="/">
+        <div class="footer-top container-flex">
+                <a class= "logo" href="/">
                     <img src="images/logos/logo-polished-white.svg" alt="white polished logo">
                     </a>
-                <a class="float-right button btn-white"href="#">Sign Up</a>
-                </div>
+                <a class="button btn-white"href="#">Sign Up</a>
         </div>
-        <div class="footer-bottom">
-            <div class="container container-footer">
-                <small class= "float-left">&copy; 2021 Algonquin College</small>
-                <ul class="ul-footer float-right">
+        <div class="footer-bottom container-flex">
+                <small>&copy; 2021 Algonquin College</small>
+                <ul class="ul-footer">
                     <li><a href="">Privacy Policy</a></li>
                     <li><a href="">Terms of Service</a></li>
                 </ul>
-            </div>
         </div>
     </footer>
 
