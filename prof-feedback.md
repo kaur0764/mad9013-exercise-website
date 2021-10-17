@@ -33,3 +33,12 @@ Fantastic work!
 
 - Having different max-widths at each media query isn't necessary. just stick with the base `.container` in the header and footer
 - Apply the `.button` class to the `a` not the `li`. We want to apply the button styles to the element we interact with.
+
+## Week 6 ----------------------
+
+Code Quality: 2.75/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 4.75/5
+
+You have split your `nav ul` into separate `ul` tags to accomplish the layout. This should not be done as that affects the semantics of the content. Never change the `html` to serve design like this. Instead, in this case use a `flex-grow` on the "Pricing" `li`. This will make the `li` expand and fill the space, which will push the final two nav items to the right side
