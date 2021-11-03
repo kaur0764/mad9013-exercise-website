@@ -42,3 +42,12 @@ File Organization & Commits: 1/1
 Total: 4.75/5
 
 You have split your `nav ul` into separate `ul` tags to accomplish the layout. This should not be done as that affects the semantics of the content. Never change the `html` to serve design like this. Instead, in this case use a `flex-grow` on the "Pricing" `li`. This will make the `li` expand and fill the space, which will push the final two nav items to the right side
+
+## Week 7 ----------------------
+
+Code Quality: 3/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 5/5
+
+Fantastic work!
