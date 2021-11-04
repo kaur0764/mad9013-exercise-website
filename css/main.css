@@ -13,6 +13,10 @@ body{
     margin: 0px;
 }
 
+table{
+    width: 100%;
+}
+
 /* ------ masthead for reference style sheet -------- */
 
 .mast{     
@@ -282,7 +286,7 @@ li{
 }
 
 
-li a.button{
+.sign-up{
     font-size: 1rem;
     padding: 0.4rem 2rem;
     border-color: #066051;
@@ -307,7 +311,7 @@ ul{
     padding-bottom: 1.5rem;
 } 
 
-header h1{
+.logo{
     margin: 0rem;
 }
 
@@ -339,7 +343,6 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* position: relative; */
 }
 
 .nav-toggle .toggle {
@@ -567,7 +570,7 @@ footer img{
     }
 } 
 
-/* ------------ Platform Tour ------------ */
+/* ---------------- Platform Tour ---------------- */
 
 
 .platform-tour .container-text{
@@ -602,7 +605,7 @@ footer img{
 
 .platform-tour-image{
     grid-area: image;
-}  
+} 
 
 @media only screen and (min-width:  38em){  
     .platform-tour-container{
@@ -617,5 +620,140 @@ footer img{
     {
         grid-template-areas: 
         'image text';
+    }
+}
+
+/* ------------------ Pricing -------------------- */
+
+.pricing{
+    padding-top: 11rem;
+    padding-bottom: 5rem;
+}
+
+.pricing h1,
+.pricing p{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.3rem;
+}
+
+.pricing .container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.pricing-text p{
+    font-size: 1.953rem;
+}
+
+.pricing .button{
+    font-size: 1.25rem;
+    padding:0.6rem 2.5rem;
+}
+
+.table-scroller{
+    max-width: 100%;
+    overflow-x: scroll;
+    padding-top: 6rem;
+}
+
+.table-pricing{
+    min-width: 44.5em;
+}
+
+.table-pricing tbody th {
+    text-align: left;
+}
+
+.table-pricing tbody td,
+.table-pricing tfoot td {
+    text-align: center;
+}
+
+
+.table-pricing th,
+.table-pricing td {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.table-pricing tbody tr:first-child td{
+    padding-top: 2.45rem;
+    padding-bottom: 2.45rem;
+}
+
+.table-pricing tfoot tr td{
+    padding-top: 3.3rem;
+    padding-bottom: 3.3rem;
+}
+
+
+.table-pricing tbody th,
+.table-pricing tbody td{
+    border-bottom: 1px solid #eee;
+}
+
+.table-pricing{
+    border-collapse: collapse;
+}
+
+.table-pricing tbody tr span{
+    font-weight: 900;
+    font-size: 4.209rem;
+}
+
+.table-pricing thead th{
+    font-size:  1.563rem;
+}
+
+.table-pricing tbody th{
+    font-size: 1.25rem;
+}
+
+sup{
+    position: relative; 
+    top: -1.7rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.table-pricing tfoot p{
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0;
+}
+
+.premium-btn{
+    background-color: #09a38c;
+    border-color: #09a38c;
+    color:#f3f6f5;
+}
+
+.premium-btn:hover,
+.premium-btn:active{
+    background-color: #066051;
+    border-color: #066051;
+}
+
+.table-pricing thead tr th:nth-child(3),
+.table-pricing tbody tr td:nth-of-type(2),
+.table-pricing tfoot td:nth-of-type(3){
+    background-color: #F2F6F4;
+    color: #066051;
+}
+
+.table-pricing thead th{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.table-pricing tfoot tr td{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width:  50em){
+    .pricing-text p{
+        font-size: 1.44rem;
     }
 }
