@@ -51,3 +51,12 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Fantastic work!
+
+## Week 9 ----------------------
+
+Code Quality: 3/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 5/5
+
+Great job! I see you added the hamburger nav as well! Awesome 🍔 🍔 🍔
