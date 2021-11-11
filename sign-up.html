@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polished+</title>
+    <title>Sign-Up-Polished+</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 <body>
     <header class="masthead">
         <div class="container-header container-flex">
-            <h1 class="logo masthead-item-one">
+            <strong class="logo masthead-item-one">
                     <a href="./">
                         <img src="logos/logo-polished-color.svg" alt="Polished">
                     </a>
-            </h1>
+            </strong>
             <nav id="nav" class="masthead-item-two">
                 <ul class="ul-masthead">
                     <li><a href="./platform-tour.html">Platform Tour</a></li>
@@ -35,41 +35,42 @@
             </a>
         </div>
     </header>
-    
 
-    <main>
-        <header class="banner banner-hero"> <!-- Hero banner -->
-            <div class= "container">
-                <h2>Community feel. Professional look.</h2>
-                <p>Create your team’s new look with our simple, fast brand builder.</p>
-                <a class="button btn-green" href="#">Sign Up</a>
-            </div>
-        </header>
-
-        <section> <!-- Logo bar -->
-            <ul class="logo-bar">
-                <li class="logo-item one"><img src="images/logos/logo-ns.svg" alt="north star's logo"/></li>
-                <li class="logo-item two"><img src="images/logos/logo-tt.svg" alt="TopTable's logo"/></li>
-                <li class="logo-item three"><img src="images/logos/logo-qc.svg" alt="QUIDDITCH CANADA's logo"/></li>
-                <li class="logo-item four"><img src="images/logos/logo-met.svg" alt="Metcalfe Jets' logo"/></li>
-            </ul>
-        </section>
-
-        <section class="product"> <!-- Product intro -->
-            <div class="container">
-                <div class="container-text product-platform">
-                    <h2>Design your brand from top to bottom.</h2>
-                    <p>With the Polished brand builder, you can create any asset your team could need. From logos, to jerseys, to merchandise, to advertisements. With simple templates, a variety of pre-designed elements, and an easy to use platform, professional level sports branding is at your fingertips!</p>
+    <main class="main-sign-up">
+        <section class="section-sign-up"> 
+            <form name="sign-up-form">
+                <h1>Sign Up</h1>
+                <div class="form-grid first-name">
+                    <label class="screen-reader-text" for="first-name">First Name</label>
+                    <input type="text" placeholder="First Name" name="first-name" id="first-name" required/>
                 </div>
-                <img src="images/product/laptop-platform.png" alt="Laptop platform">
-            </div>
-        </section>
-
-        <section  class="banner banner-action"><!-- Call to Action Banner -->
-            <h2>Join now and take your team to the next level.</h2>
-            <a class="button btn-white" href="#">Sign Up</a>
-        </section>
-    </main> 
+                <div class="form-grid last-name">
+                    <label class="screen-reader-text" for="last-name">Last Name</label>
+                    <input type="text" placeholder="Last Name" name="last-name" id="last-name" required/>
+                </div>
+                <div class="form-grid">
+                    <label class="screen-reader-text" for="email">Email</label>
+                    <input type="email" placeholder="Email" name="email" id="email" required/>
+                </div>
+                <div class="form-grid">
+                    <label class="screen-reader-text" for="password">Password</label>
+                    <input type="password" placeholder="Password" name="password" id="password" required/>
+                </div>
+                <div class="form-grid">
+                    <label class="screen-reader-text" for="confirm-password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="password" id="confirm-password" required/>
+                </div>
+                <div class="form-grid">
+                    <input type="checkbox" id="checkbox" required/>
+                    <label for="checkbox">I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="form-grid">
+                    <button class="button sign-up-btn" type="submit">Submit</button>
+                </div>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </form>
+        </section> 
+    </main>
 
     <footer>
         <div class="footer-top container-flex">

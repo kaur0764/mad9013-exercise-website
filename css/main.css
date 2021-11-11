@@ -757,3 +757,103 @@ sup{
         font-size: 1.44rem;
     }
 }
+
+/* ------------------ Sign-Up -------------------- */
+
+.main-sign-up{
+    background-image: linear-gradient(to bottom,#0007,#0007),url("../images/banners/hockey-goalie.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.8rem;
+}
+
+.section-sign-up{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem; 
+}
+
+form {
+    max-width: 35rem;
+    min-width: 20em;
+    margin: 0 auto;
+    padding: 1.4rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: grid;
+    gap:1.38rem;
+}
+
+.screen-reader-text{
+    position: absolute;
+    clip-path: polygon(0 0, 0.1% 0, 0.1% 0.1%, 0.1% 0);
+}
+
+form h1{
+    text-transform: none;
+    text-align: left;
+    margin: 0;
+} 
+
+input{
+    border: 1px solid #ddd;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    width:100%;
+}
+
+[type="checkbox"] + label{
+    position: relative; 
+    top: -2.1rem;
+    font-size: 0.833rem;
+    display: block;
+    padding-left: 2.3rem;
+} 
+
+[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+} 
+
+.sign-up-btn.button{
+    padding: 0.4rem 2.1rem;
+    color: #fff;
+    background-color: #09a38c;
+    font-size: 1rem;
+    border: 1px solid #09a38c;
+}
+
+form p{
+    margin: 0;
+    font-size: 0.82rem;
+}
+
+@media only screen and (min-width:25em){
+    [type="checkbox"] + label{
+        top: -0.4rem;
+        display: inline;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width:45em){
+    
+    form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    form h1,
+    form div:not(.first-name):not(.last-name){
+        grid-column: 1/-1;
+    }
+    
+    .main-sign-up{
+        margin-top: 6.598rem; 
+        padding-top: 3rem;
+        padding-bottom: 3rem; 
+    }
+    
+}
