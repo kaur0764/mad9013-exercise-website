@@ -13,14 +13,21 @@
 </head>
 
 <body>
-    <header class="masthead">
+
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+        <li><a href="#footer">Skip to footer</a></li>
+    </ul>
+
+    <header class="masthead" role="banner">
         <div class="container-header container-flex">
             <h1 class="logo masthead-item-one">
                 <a href="./">
                     <img src="logos/logo-polished-color.svg" alt="Polished">
                 </a>
             </h1>
-            <nav id="nav" class="masthead-item-two">
+            <nav id="nav" role="navigation" class="masthead-item-two">
                 <ul class="ul-masthead">
                     <li><a href="./platform-tour.html">Platform Tour</a></li>
                     <li><a href="./pricing.html">Pricing</a></li>
@@ -28,7 +35,7 @@
                     <li><a class="button btn-green sign-up" href="sign-up.html">Sign Up </a></li>
                 </ul>
             </nav>
-            <a class="nav-toggle" href="#nav">
+            <a class="nav-toggle" href="#nav" aria-label="Click to open mobile nav">
                 <span class="toggle top"></span>
                 <span class="toggle middle"></span>
                 <span class="toggle bottom"></span>
@@ -36,8 +43,8 @@
         </div>
     </header>
     
-    <main>
-        <header class="banner banner-hero banner-platform-tour"> <!-- Hero banner -->
+    <main id="main">
+        <header class="banner banner-hero banner-platform-tour" tabindex="0"> <!-- Hero banner -->
             <div class= "container">
                 <h2>Next Level Design at Your Fingertips.</h2>
                 <p>The Polished+ platform makes designing your brand fast and simple.</p>
@@ -45,7 +52,7 @@
             </div>
         </header>
 
-        <section class="platform-tour"> <!-- Product Tour -->
+        <section class="platform-tour" tabindex="0"> <!-- Product Tour -->
             <div class="container">
                 <div class="container-text">
                     <h2>The Polished+ Platform</h2>
@@ -89,7 +96,7 @@
             </div>
         </section>
         
-        <section class="product"> <!-- Product intro -->
+        <section class="product" tabindex="0"> <!-- Product intro -->
             <div class="container">
                 <div class="container-text product-platform">
                     <h2>A platform like no other.</h2>
@@ -106,7 +113,7 @@
         
     </main> 
 
-    <footer>
+    <footer id="footer" role="contentinfo">
         <div class="footer-top container-flex">
                 <a class= "logo" href="/">
                     <img src="images/logos/logo-polished-white.svg" alt="white polished logo">
@@ -120,6 +127,7 @@
                     <li><a href="">Terms of Service</a></li>
                 </ul>
         </div>
+        <a class="to-top" href="#main">	&#708;</a>
     </footer>
     <script src="./js/main.js"></script> 
 </body>

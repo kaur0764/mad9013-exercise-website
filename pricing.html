@@ -13,14 +13,21 @@
 </head>
 
 <body>
-    <header class="masthead">
+
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to navigation</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+        <li><a href="#footer">Skip to footer</a></li>
+    </ul>
+
+    <header class="masthead" role="banner">
         <div class="container-header container-flex">
             <strong class="logo masthead-item-one">
                     <a href="./">
                         <img src="logos/logo-polished-color.svg" alt="Polished">
                     </a>
             </strong>
-            <nav id="nav" class="masthead-item-two">
+            <nav id="nav" role="navigation" class="masthead-item-two">
                 <ul class="ul-masthead">
                     <li><a href="./platform-tour.html">Platform Tour</a></li>
                     <li><a href="./pricing.html">Pricing</a></li>
@@ -36,8 +43,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="pricing">
+    <main id="main">
+        <section class="pricing" tabindex="0">
             <div class="container">
                 <div class="pricing-text">
                     <h1>Affordable Pricing for All. </h1>
@@ -47,7 +54,7 @@
                     <table class="table-pricing">
                         <thead>
                             <tr>
-                                <th>&nbsp;</th>
+                                <td>&nbsp;</td>
                                 <th scope="col">Basic</th>
                                 <th scope="col">Premium</th>
                                 <th scope="col">Ultra</th>
@@ -120,7 +127,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer" role="contentinfo">
         <div class="footer-top container-flex">
                 <a class= "logo" href="/">
                     <img src="images/logos/logo-polished-white.svg" alt="white polished logo">
@@ -134,6 +141,7 @@
                     <li><a href="">Terms of Service</a></li>
                 </ul>
         </div>
+        <a class="to-top" href="#main">	&#708;</a>
     </footer>
     <script src="./js/main.js"></script> 
 </body>
