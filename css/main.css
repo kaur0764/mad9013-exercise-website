@@ -907,3 +907,11 @@ a.to-top{
     outline-offset: 0.225rem;
 }
 
+@media only screen and (max-width: 45em){  
+    nav a{
+        display: none;
+    }
+    .open a{
+        display: inline-block;
+    }
+}
