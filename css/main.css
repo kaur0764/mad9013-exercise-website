@@ -907,7 +907,3 @@ a.to-top{
     outline-offset: 0.225rem;
 }
 
-.nav-toggle:focus{
-    outline: 0.225rem solid var(--colour-accent);
-    outline-offset: 0.225rem;
-}
