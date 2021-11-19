@@ -907,9 +907,16 @@ a.to-top{
     outline-offset: 0.225rem;
 }
 
+.nav-toggle{
+    display: none;
+}
+
 @media only screen and (max-width: 45em){  
-    nav a{
+    .masthead-item-two a{
         display: none;
+    }
+    .nav-toggle{
+        display:flex;
     }
     .open a{
         display: inline-block;
