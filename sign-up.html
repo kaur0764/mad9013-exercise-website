@@ -68,7 +68,7 @@
                     <label class="screen-reader-text" for="confirm-password">Confirm Password</label>
                     <input type="password" placeholder="Confirm Password" name="password" id="confirm-password" required/>
                 </div>
-                <div class="form-grid">
+                <div class="form-grid checkbox-grid">
                     <input type="checkbox" id="checkbox" required/>
                     <label for="checkbox">I agree to the <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></label>
                 </div>
@@ -82,18 +82,43 @@
 
     <footer id="footer" role="contentinfo">
         <div class="footer-top container-flex">
-                <a class= "logo" href="/">
-                    <img src="images/logos/logo-polished-white.svg" alt="white polished logo">
-                    </a>
-                <a class="button btn-white" href="#">Sign Up</a>
+            <a class= "logo" href="/">
+                <img src="images/logos/logo-polished-white.svg" alt="white polished logo">
+            </a>
+            <span class="footer-sign-up"><a class="button btn-white" href="#">Sign Up</a></span> 
+            <div>
+                <a href="#">
+                    <i class="icon">
+                        <svg>
+                            <use xlink:href="images/icons.svg#ig"></use>
+                        </svg>
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="icon">
+                        <svg>
+                            <use xlink:href="images/icons.svg#fb"></use>
+                        </svg>
+                    </i>
+                </a>
+                <a href="#">
+                    <i class="icon">
+                        <svg>
+                            <use xlink:href="images/icons.svg#twitter"></use>
+                        </svg>
+                    </i>
+                </a>
+            </div>
         </div>
-        <div class="footer-bottom container-flex">
-                <small>&copy; 2021 Algonquin College</small>
-                <ul class="ul-footer">
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms of Service</a></li>
-                </ul>
-        </div>
+            <div class="footer-bottom-wrapper">
+                <div class="footer-bottom container-flex">
+                    <small>&copy; 2021 Algonquin College</small>
+                    <ul class="ul-footer">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
         <a class="to-top" href="#main">	&#708;</a>
     </footer>
     <script src="./js/main.js"></script> 

@@ -92,7 +92,7 @@ a{
 
 a:hover,
 a:focus{
-    color:  #09a38c;;
+    color:  #09a38c;
 }
 
 @media only screen and (min-width: 45em){
@@ -231,6 +231,7 @@ a:focus{
     border-radius: 2.5rem;
     display:inline-block;
     font-size:1.6rem;
+    transition: all 0.5s;
 }
 
 .btn-green{
@@ -332,9 +333,14 @@ ul{
     justify-content: space-between; 
 }
 
-.masthead a{
+.masthead a:not(.button){
     color: #066051;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.masthead a:hover:not(.button){
+    color: #09a38c;
 }
 
 .nav-toggle {
@@ -355,7 +361,7 @@ ul{
 
 .masthead nav{
     position: fixed;
-    top: 3.9rem;
+    top: 3.84rem;
     right: -100vw;
     width: 100vw;
     height: 100vh;
@@ -406,6 +412,24 @@ footer img{
     margin-bottom: 1.5rem;
 }
 
+.icon svg{
+    height: 1.49rem;
+    width: 1.49rem; 
+    margin:0.65rem;
+    margin-top: 2rem;
+    fill: #fff;
+    transition: fill 0.3s;
+}
+
+.icon svg:hover,
+.icon svg:focus{
+    fill: #09a38c;
+}
+
+.footer-top a{
+    text-decoration: none;
+}
+
 .footer-bottom{
     background-color:#13453B;
     color: #f3f6f5;
@@ -415,6 +439,11 @@ footer img{
 
 .footer-bottom a{
     color: #f3f6f5;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover{
+    color: #09a38c;
 }
 
 .ul-footer li{ 
@@ -485,12 +514,18 @@ footer img{
     
     /* ---------- Footer ---------- */
     
+    footer{
+        background-color: #1D6051;
+        margin: 0 auto;
+    }
+
     .footer-top{
         display: flex;
         justify-content: space-around;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin: 0;
+        align-items: center;
+        padding: 1rem 5rem;
+        margin: 0 auto;
+        max-width: 70em;
     }
     
     footer img{
@@ -498,15 +533,37 @@ footer img{
         display: inline;
         padding-right: 7rem;
     }
-    
+
+    .footer-sign-up{
+        flex-grow: 1;
+        text-align: right;
+        margin-right: 0.65rem;
+    }
+
+    .icon svg{
+        margin-top: 1rem;
+    }
+
     .footer-bottom{
         display: flex;
-        justify-content: space-around;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin: 0;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        margin: 0 auto;
+        max-width: 70em; 
+    }
+
+    .footer-bottom-wrapper{
+        background-color: #13453B;
     }
     
+    .footer-bottom small{
+        padding-right: 0.4rem;
+    }
+    
+    .footer-bottom ul{
+        padding-left: 0.5rem;
+    }
+        
     .ul-footer{
         padding: 0;
     }
@@ -806,12 +863,17 @@ input{
 }
 
 [type="checkbox"] + label{
-    position: relative; 
-    top: -2.1rem;
+    position: absolute; 
+    top: -0.09rem;
     font-size: 0.833rem;
     display: block;
     padding-left: 2.3rem;
 } 
+
+.checkbox-grid{
+    position: relative;
+    padding-bottom: 0.65rem;
+}
 
 [type="checkbox"] {
     width: 1.5rem;
@@ -826,6 +888,10 @@ input{
     border: 1px solid  #066051;
 }
 
+.sign-up-btn:hover{
+    background-color: #09a38c;
+}
+
 form p{
     margin: 0;
     font-size: 0.82rem;
@@ -833,9 +899,9 @@ form p{
 
 @media only screen and (min-width:25em){
     [type="checkbox"] + label{
-        top: -0.4rem;
+        top: 0.3rem;
         display: inline;
-        padding: 0;
+        padding-left: 0.2rem;
     }
 }
 
@@ -861,7 +927,7 @@ form p{
 /* -----------------Accessibility------------------- */
 
 :root{
-    --colour-accent:#B60000;
+    --colour-accent:#75d30a;
 }
 
 .skip-links {
@@ -891,7 +957,7 @@ form p{
     bottom: 0;
     margin-right: 1rem;
     margin-bottom: 2rem;
-    background-color: var(--colour-accent);
+    background-color: #09a38c;
     border-radius: 0.5rem ; 
 }
 
@@ -902,9 +968,23 @@ a.to-top{
     text-decoration:none;
 }
 
+
 *:focus{
-    outline: 0.225rem solid var(--colour-accent);
+    outline: 0.125rem solid var(--colour-accent);
     outline-offset: 0.225rem;
+}
+
+@supports selector(:focus-visible){
+
+*:focus{
+    outline:none;
+}
+
+*:focus-visible{
+    outline: 0.125rem solid var(--colour-accent);
+    outline-offset: 0.225rem;
+}
+
 }
 
 .nav-toggle{
@@ -920,5 +1000,34 @@ a.to-top{
     }
     .open a{
         display: inline-block;
+    }
+}
+
+/* -----------------Animation------------------- */
+
+.banner-hero h2,
+.banner-hero p,
+.banner-hero .button{
+    transform: translateX(-10rem);
+    opacity: 0;
+    animation: slideIn .3s 0.8s forwards;
+}
+
+.banner-hero p{
+    animation-delay: 1s;
+}
+
+.banner-hero .button{
+    animation-delay: 1.3s;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
     }
 }
