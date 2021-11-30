@@ -78,3 +78,12 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Overall great! I would suggest making your focus highlights a little less bold and on brand with a more similar colour.
+
+## Week 12 ----------------------
+
+Code Quality: 3/3
+Design: 1/1
+File Organization & Commits: 1/1
+Total: 5/5
+
+Great work!
