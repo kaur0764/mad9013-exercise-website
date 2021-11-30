@@ -1,0 +1,80 @@
+/* ----------------- Banners ----------------- */
+
+.banner{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: light;
+    color:var(--color-primary--pale);
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    h2{
+        text-transform: uppercase;
+        font-weight: normal;
+        margin:1rem 0;
+    }
+
+    p{
+        font-size:1.3rem;
+        margin:1rem 0;
+    }
+}
+
+.banner-hero{
+    background-image:linear-gradient(to bottom,#0007,#0007),url("../banners/hero-home.jpg");
+    padding: 9.5rem 2rem;
+    clear: both;
+
+    .container{
+        padding: 1rem;
+    }
+}
+
+.banner-action{
+    background-image:linear-gradient(to bottom,#0009,#0009),url("../banners/soccer-banner-bw.jpg");
+    padding: 5.3rem 1.5rem;
+}
+
+.banner-hero.banner-platform-tour{
+    background-image:linear-gradient(to bottom,#0007,#0007),url("../banners/hero-platform.jpg");
+}
+
+@media only screen and (min-width:  45em){  
+    banner-hero{
+        padding: 13.5rem 2rem;
+}
+}
+
+
+/* -----------------Animation------------------- */
+
+.banner-hero{ 
+    h2,
+    p,
+    .button{
+    transform: translateX(-10rem);
+    opacity: 0;
+    animation: slideIn .3s 0.8s forwards;
+    }
+    
+    p{
+        animation-delay: 1s;
+    }
+    
+    .button{
+        animation-delay: 1.3s;
+    }
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,22 @@
+/* ----------------- Icons ----------------- */
+.icon svg{
+    height: 1.49rem;
+    width: 1.49rem; 
+    margin:0.65rem;
+    margin-top: 2rem;
+    fill: #fff;
+    transition: fill 0.3s;
+
+    &:hover,
+    &:focus{
+        fill: var(--color-primary--medium);
+    }
+}
+
+@media only screen and (min-width:  45em){  
+
+    .icon svg{
+        margin-top: 1rem;
+    }
+
+}

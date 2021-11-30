@@ -1,0 +1,31 @@
+.main-sign-up{
+    background-image: linear-gradient(to bottom,#0007,#0007),url("../images/banners/hockey-goalie.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.8rem;
+
+    .section-sign-up{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem; 
+    }
+    .sign-up-btn.button{
+        padding: 0.4rem 2.1rem;
+        color: #fff;
+        background-color:  var(--color-primary);
+        font-size: 1rem;
+        border: 1px solid  var(--color-primary);
+    }
+    .sign-up-btn:hover{
+        background-color: var(--color-primary--medium);
+    }
+}
+
+@media only screen and (min-width:45em){    
+    .main-sign-up{
+        margin-top: 6.598rem; 
+        padding-top: 3rem;
+        padding-bottom: 3rem; 
+    }
+}

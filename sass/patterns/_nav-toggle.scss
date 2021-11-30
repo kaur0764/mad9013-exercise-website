@@ -1,0 +1,47 @@
+/* ----------------- Nav-toggle ----------------- */
+.nav-toggle {
+    width: 2.5rem;
+    height: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .toggle {
+        width: 100%;
+        height: 4px;
+        background-color:var(--color-primary--medium);
+        position: relative;
+        transition: transform .5s;
+    }
+    
+}
+
+.masthead nav.open{
+    right: 0;
+}
+
+.open{
+    .top {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    }
+    .middle {
+        opacity: 0;
+    }
+    .bottom {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+    } 
+}
+
+@media only screen and (max-width: 45em){  
+    .masthead-item-two a{
+        display: none;
+    }
+    .nav-toggle{
+        display:flex;
+    }
+    .open a{
+        display: inline-block;
+    }
+}

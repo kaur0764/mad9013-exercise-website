@@ -1,0 +1,30 @@
+/* ------ Boilerplate -------- */
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+}
+
+table{
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+a{
+    color: var(--color-primary);
+
+    &:hover,
+    &:focus{
+    color:  var(--color-primary--medium);
+    }
+}

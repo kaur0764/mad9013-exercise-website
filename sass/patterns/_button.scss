@@ -1,0 +1,29 @@
+/* ----------------- Buttons ----------------- */
+.button{
+    text-decoration: none;
+    padding:0.5rem 3rem;
+    border-radius: 2.5rem;
+    display:inline-block;
+    font-size:1.6rem;
+    transition: all 0.5s;
+
+    &:hover{
+        background-color: var(--color-primary--medium);
+        color:var(--color-primary--pale);
+    }
+    
+    &:active{
+        background-color: var(--color-primary--dark);
+        border-color:  var(--color-primary--pale);
+    }
+}
+
+.btn-green{
+    color: var(--color-primary--medium);
+    border: 0.15rem solid  var(--color-primary--medium);
+}
+
+.btn-white{
+    color: var(--color-primary--pale);
+    border: 0.15rem solid var(--color-primary--pale);
+}

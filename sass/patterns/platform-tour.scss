@@ -1,0 +1,60 @@
+/* ---------------- Platform Tour ---------------- */
+
+.platform-tour {
+
+    .container{
+        margin-top: 6rem;
+        margin-bottom: 12rem;
+
+        .container-text{
+            margin: 0 auto;
+            text-align: left;
+            font-size: 1.25rem;
+
+            h2{
+                text-align: center;
+            }
+
+            .platform-tour-container{
+                display: grid;
+                grid-template-areas: 
+                'text'
+                'image';
+            }
+
+            img{
+                margin-bottom: 3rem;
+            } 
+            
+            .platform-tour-text{
+                grid-area: text;
+            }  
+            .platform-tour-image{
+                grid-area: image;
+            } 
+            
+        }
+    }
+}
+
+@media only screen and (min-width:  38em){  
+    .platform-tour {
+        .container{
+            .container-text{
+                .platform-tour-container{
+                grid-template-areas: 
+                'text image';
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                gap: 5rem;
+                }
+            
+                .platform-tour-container:nth-child(even)
+                {
+                    grid-template-areas: 
+                    'image text';
+                }
+            }
+        }
+    }  
+}

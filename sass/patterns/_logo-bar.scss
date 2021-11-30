@@ -1,0 +1,58 @@
+/* ----------------- Logo-bar ----------------- */
+
+.logo-bar{
+    padding: 0 0.15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    max-width: 90em;
+    
+    .logo-item img{
+        max-width:160px;
+    }
+    
+    .logo-item.one{
+    flex:0 0;
+    }
+    
+    .logo-item.two{
+    flex:0 0;
+    }
+    .logo-item.three{
+    flex:0 0;
+    }
+    .logo-item.four{ 
+    flex:0 0;
+    }
+    
+} 
+
+@media only screen and (max-width: 52em){
+.logo-bar{
+    justify-content: center;
+    align-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    min-height: 11rem;
+    gap: 2rem;
+
+    .logo-item.one{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.two{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.three{
+        flex:0 0 40%;
+    }
+    
+    .logo-item.four{
+        flex:0 0 40%;
+    }  
+} 
+} 
