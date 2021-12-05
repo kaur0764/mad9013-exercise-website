@@ -87,3 +87,11 @@ File Organization & Commits: 1/1
 Total: 5/5
 
 Great work!
+
+## Week 13 ----------------------
+
+Code Quality: 3/3
+File Organization & Commits: 2/2
+Total: 5/5
+
+Awesome job!
